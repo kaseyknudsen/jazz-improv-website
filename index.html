@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Jazz Theory Website Homepage</title>
+</head>
+<body>
+    <!-- jumbotron -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="jumbotron text-center">
+          <div class="row">
+            <div class="col-md-6" id="jumbotron-background">
+                <h1>The Jazz Theory Website</h1>
+                <h4>Your Go-To Practice Tool</h4>
+            </div>
+            <!-- membership button -->
+            <div class="col-md-6 align-self-center">
+                <button type="button" id="membershipButton" class="btn btn-lg">Become a Member</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- membership modal -->
+    <div id="membershipModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleID">Become a Member of JTW</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-10">
+                        <!-- form -->
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="firstNameID">First Name</label>
+                                  <input type="text" class="form-control" id="firstNameID" name="firstName" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="lastNameID">Last Name</label>
+                                  <input type="password" class="form-control" id="lastNameID" name="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="emailAddressID">Email</label>
+                                <input type="email" class="form-control" id="emailAddressID" name="email" placeholder="Email Address">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="passwordID">Password</label>
+                                <input type="text" class="form-control" id="passwordID" name="password" placeholder="Enter Password">
+                              </div>
+                            </div>  
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="instrumentID">Your Instrument</label>
+                                    <select name="instrument" id="instrumentID" class="form-control">
+                                        <option value="choose">Choose...</option>
+                                        <option value="saxophone">Saxophone</option>
+                                        <option value="trumpet">Trumpet</option>
+                                        <option value="trombone">Trombone</option>
+                                        <option value="clarinet">Clarinet</option>
+                                        <option value="flute">Flute</option>
+                                        <option value="piano">Piano</option>
+                                        <option value="guitar">Guitar</option>
+                                        <option value="bass">Bass</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="levelID">Your Level</label>
+                                    <select name="user-level" id="levelID" class="form-control">
+                                        <option value="choose">Choose...</option>
+                                        <option value="beginner">Beginner</option>
+                                        <option value="intermediate">Intermediate</option>
+                                        <option value="advanced">Advanced</option>
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="form-group">
+                                <label for="TextareaID">Comments:</label>
+                                <textarea class="form-control" id="TextareaID" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn" id="submitButton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="jazzWebsiteNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="jazzWebsiteNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="theory-flashcards.html" class="nav-link">Theory</a></li>
+                    <li class="nav-item"><a href="ear-training.html" class="nav-link">Ear Training</a></li>
+                    <li class="nav-item"><a href="history.html" class="nav-link">Jazz History</a></li>
+                    <li class="nav-item"><a href="practice-routines.html" class="nav-link">Practice Routines</a></li>
+                    <li class="nav-item"><a href="jazz-repertoire.html" class="nav-link">Jazz Repertoire</a></li>
+                    <li class="nav-item"><a href="contact-me.html" class="nav-link">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- intro photo & text -->
+        <div class="row row-style align-items-center">
+            <div class="col-sm-6 mb-3">
+                <h3>About Me</h3>              
+                    <p id="intro-text">Hello, and thanks for visiting the Jazz Theory Website! My name is Kasey, and I've been studying jazz for most of my adult life. I believe
+                    that learning how to improvise shouldn't be overwhelming. With a step by step systematic approach, you can get as good as you want to be! Whether
+                    you want to improve your theory knowledge, develop your ear, learn jazz standards, organize your practice routine or learn a bit about
+                    jazz history, you have come to the right place!
+                </p>               
+            </div>      
+            <div class="col-sm-6 mt-3">
+                <img src="images/kasey-image1.jpg" id="kaseyImage1" class="rounded mx-auto d-block" width="270" height="405" alt="Kasey Knudsen">
+            </div>        
+        </div>
+        <!-- card section -->
+        <div class="row text-center mt-5">
+            <div class="col-12">
+                <h1>Quick Links</h1>
+            </div>
+        </div>
+        <div class="row row-style ">
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <div class="card card-grow">
+                    <img src="images/ostrich.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">"I'm a trumpet player. I want to improve my ear, but I'm not sure where to start."</p>
+                        <!-- <a href="#" class="btn btn-secondary">Go to correct page</a> -->
+                        <a href="ear-training.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <div class="card card-grow">
+                    <img src="images/emu.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">"How can I get better at identifying modes?"</p>
+                        <!-- <a href="#" class="btn btn-secondary">Go to correct page</a> -->
+                        <a href="theory-flashcards.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <div class="card card-grow">
+                    <img src="images/cow.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">"I'm a saxophone player. I have a pretty good ear, but I'd like to be challenged."</p>
+                        <!-- <a href="#" class="btn btn-secondary">Go to correct page</a> -->
+                        <a href="ear-training.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <div class="card card-grow">
+                    <img src="images/vizsla.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">"How do I organize my practice time?"</p>
+                        <!-- <a href="#" class="btn btn-secondary">Go to correct page</a> -->
+                        <a href="practice-routines.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <div class="col-12">
+                <div class="card" id="testimonialID1">
+                    <div class="card-header testimonial-card-header">
+                        Testimonial
+                    </div>
+                    <div class="card-body testimonial-card">
+                      <blockquote class="blockquote mb-0">
+                        <p>“Kasey has been an incredible teacher and source of inspiration for my son as he progressed from being a 
+                            beginner at age 11 to now being a mature player at age 16, with a level of mastery of sax technique, a deep 
+                            sense of musicianship, a natural jazz fluidity that would have never been possible without Kasey's supremely 
+                            attuned, patient, and insightful expertise and guidance. As with her world-class talents as a saxophonist and 
+                            composer, she's also a world-class teacher of students of all levels and ages. I cannot recommend her enough!”</p>
+                        <footer class="blockquote-footer">Ben Silverman</footer>
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card mt-5"  id="testimonialID2">
+                    <div class="card-header testimonial-card-header">
+                        Testimonial
+                    </div>
+                    <div class="card-body testimonial-card">
+                      <blockquote class="blockquote mb-0">
+                        <p>“I took lessons with Kasey for about 2-3 years and I can easily say that she is an outstanding saxophone teacher. 
+                            She focuses on strengthening your saxophone fundamentals such as technique and sound as well as being analytical 
+                            about jazz improvisation, solo transcriptions, learning jazz standards and vocabulary. Kasey always encouraged 
+                            me to try my best at every lesson, even if I messed up. Through her melodic and tasteful improvisations and 
+                            practice discipline, Kasey has made a more confident musician and I will forever be grateful for that.”</p>
+                        <footer class="blockquote-footer">Barrett Koontz</footer>
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card mt-5" id="testimonialID3">
+                    <div class="card-header testimonial-card-header">
+                      Testimonial
+                    </div>
+                    <div class="card-body testimonial-card">
+                      <blockquote class="blockquote mb-0">
+                        <p>“I found Kasey to be a profoundly insightful and inspirational teacher. Kasey offers a structured program that 
+                            is flexible enough to respond to an individual player’s needs and circumstances. I took lessons with Kasey 
+                            during the height of the pandemic, so necessarily on Zoom; I was very pleased with how Kasey managed to make 
+                            the sessions feel just like in-person lessons, with insightful analysis my playing and tailored exercises to 
+                            help me work toward specific goals. Through a wonderful combination of structure and openness Kasey managed 
+                            to push me to play with better accuracy, get my jazz articulation down, increase my speed, memorize tunes 
+                            and chord progressions, transcribe jazz solos, and ultimately create melodic improvised solos of my own. 
+                            I highly recommend Kasey as a teacher of both saxophone and of jazz improvisation.”</p>
+                        <footer class="blockquote-footer">Terry Toczynski</footer>
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <div class="card mt-5" id="testimonialID4">
+                    <div class="card-header testimonial-card-header">
+                        Testimonial
+                    </div>
+                    <div class="card-body testimonial-card">
+                      <blockquote class="blockquote mb-0">
+                        <p>“Kasey is an AMAZING player and superfine teacher! I can easily say she’s one of the finest instructors I’ve 
+                            had for any subject. Studying jazz with her has been quite a journey for me; my goal is to play smart, 
+                            expressive improvisations and she’s taking me there. I’m a professional, classically-trained player on an 
+                            unconventional wind instrument; Kasey has taken me from ground zero in jazz to feeling comfy and capable as a 
+                            developing jazz improviser. In the process, my understanding of theory and musicianship has increased 
+                            exponentially. I’ve learned a tremendous amount about focusing mentally when playing and improvising, and am a 
+                            better and more confident musician overall. I recommend her highly as a superb jazz teacher, with a quiet, kind, 
+                            and gentle manner.”</p>
+                        <footer class="blockquote-footer">Frances Feldon</footer>
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+        </div>                   
+    </div>
+    <footer class="site-footer" id="siteFooter">           
+        <div class="container">
+            <div class="row mt-5">
+                <!--social links  -->
+                <div class="col-sm-6 col-md-4 mt-4">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-social-icon " href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="btn btn-social-icon " href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="btn btn-social-icon " href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="btn btn-social-icon " href="http://youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            <!-- page links -->     
+                <div class="col-sm-6 col-md-4 mt-4">
+                    <h5>Page Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="theory-flashcards.html">Theory</a></li>
+                        <li><a href="ear-training.html">Ear Training</a></li>
+                        <li><a href="history.html">Jazz History</a></li>
+                        <li><a href="blindfold-test.html">Blindfold Test</a></li>
+                        <li><a href="contact-me.html">Contact Me</a></li>
+                    </ul>
+                </div>  
+            <!-- contact links -->
+            <div class="col-sm-6 col-md-4 mt-4">
+                <h5>Connect With Me</h5>
+                <a role="button" class="btn btn-link" href="tel:1-510-381-1078"><i class="fa fa-phone-square fa-lg"></i></a> 1-510-381-1078<br />
+                <a role="button" class="btn btn-link" href="mailto:kaseyknudsen.com"><i class="fa fa-envelope-o fa-lg"></i></a> kaseyknudsen@gmail.com
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
